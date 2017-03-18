@@ -48,7 +48,7 @@
             return originalFn.apply(that._arrayFinder).then(function (arr) {
                 var list = [];
                 arr.forEach(function (finder) {
-                    list.push(new ElementFinderWrapper(finder, that._eyesDriver, that._logger));
+                    list.push(new ElementFinderWrapper.ElementFinderWrapper(finder, that._eyesDriver, that._logger));
                 });
                 return list;
             });

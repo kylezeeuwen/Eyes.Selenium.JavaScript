@@ -91,4 +91,5 @@
     };
 
     exports.ElementFinderWrapper = ElementFinderWrapper;
+    exports.ElementArrayFinderWrapper = ElementArrayFinderWrapper.ElementArrayFinderWrapper
 }());
