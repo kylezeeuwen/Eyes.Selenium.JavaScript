@@ -38,7 +38,7 @@
         // Wrap the functions that return objects that require pre-wrapping
         ELEMENT_ARRAY_FINDER_TO_ELEMENT_FINDER_FUNCTIONS.forEach(function (fnName) {
             that[fnName] = function () {
-                return new ElementFinderWrapper(that._arrayFinder[fnName].apply(that._arrayFinder, arguments), that._eyesDriver, that._logger);
+                return new ElementFinderWrapper.ElementFinderWrapper(that._arrayFinder[fnName].apply(that._arrayFinder, arguments), that._eyesDriver, that._logger);
             };
         });
 
